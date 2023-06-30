@@ -1,6 +1,13 @@
+import { useParams } from 'react-router-dom';
+
 const ArticlePage = () => {
+    // const params = useParams();
+    // const articleId = params.articleId;
+    // const { articleId } = params;
+    const { articleId } = useParams();
+
     return (
-        <h1>This is the article page!</h1>
+        <h1>This is the article page for the article with id: {articleId}!</h1>
     );
 }
 
