@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const articles = [
     {
         name: 'learn-react',
@@ -18,7 +19,8 @@ const articles = [
             consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
             `Etiam nec lectus urna. Sed sodales ultrices dapibus. 
             Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
-            nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 
+            nisi. Nunc vel pulvinar diam. Na`,
+            <Link className='image-link' to="/images/test/asd">m</Link>,` eleifend egestas viverra. Donec finibus lectus 
             sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor 
             interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
             consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
