@@ -4,7 +4,7 @@ const NavBar = () => {
         <nav>
             <ul>
                 <li>
-                    <Link to="/">Home</Link>                    
+                    <Link className="image-link" to="/">Ho<Link to="/images/test/asd">m</Link>e</Link>                    
                 </li>
                 <li>
                     <Link to="/about">About</Link>
