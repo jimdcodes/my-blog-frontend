@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 const articles = [
     {
         name: 'learn-react',
-        title: 'The Fastest Way to Learn React',
+        title: `The Fastest Way to Learn React`,
         content: [
             `Welcome! Today we're going to be talking about the fastest way to
             learn React. We'll be discussing some topics such as proin congue
@@ -10,24 +10,23 @@ const articles = [
             Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, 
             non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut 
             eleifend ut ipsum non fringilla. Praesent imperdiet nulla nec est luctus, at 
-            sodales purus euismod.`,
+            sodales purus euismod.`,<br/>,<br/>,
             `Donec vel mauris lectus. Etiam nec lectus urna. Sed sodales ultrices dapibus. 
             Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
             nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 
             sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor 
             interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
-            consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
+            consequat quam. Vivamus accumsan dui in facilisis aliquet.`,<br/>,<br/>,
             `Etiam nec lectus urna. Sed sodales ultrices dapibus. 
             Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
-            nisi. Nunc vel pulvinar diam. Na`,
-            <Link className='image-link' to="/images/test/asd">m</Link>,` eleifend egestas viverra. Donec finibus lectus 
+            nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 
             sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor 
             interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
             consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
         ]
     },    {
         name: 'learn-node',
-        title: 'How to Build a Node Server in 10 Minutes',
+        title: ['How to Build a Node Server in 10 Minutes'],
         content: [
             `In this article, we're going to be talking looking at a very quick way
             to set up a Node.js server. We'll be discussing some topics such as proin congue
@@ -35,16 +34,16 @@ const articles = [
             Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, 
             non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut 
             eleifend ut ipsum non fringilla. Praesent imperdiet nulla nec est luctus, at 
-            sodales purus euismod.`,
+            sodales purus euismod.`,<br/>,<br/>,
             `Donec vel mauris lectus. Etiam nec lectus urna. Sed sodales ultrices dapibus. 
             Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
             nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 
             sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor 
             interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
-            consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
+            consequat quam. Vivamus accumsan dui in facilisis aliquet.`,<br/>,<br/>,
             `Etiam nec lectus urna. Sed sodales ultrices dapibus. 
             Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
-            nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 
+            nisi. Nunc vel pulvinar `,<Link className="image-link" to="/typo/test/asd">d</Link>,`iam. Nam eleifend egestas viverra. Donec finibus lectus 
             sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor 
             interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
             consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
@@ -59,13 +58,13 @@ const articles = [
             Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, 
             non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut 
             eleifend ut ipsum non fringilla. Praesent imperdiet nulla nec est luctus, at 
-            sodales purus euismod.`,
+            sodales purus euismod.`,<br/>,<br/>,
             `Donec vel mauris lectus. Etiam nec lectus urna. Sed sodales ultrices dapibus. 
             Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
             nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 
             sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor 
             interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
-            consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
+            consequat quam. Vivamus accumsan dui in facilisis aliquet.`,<br/>,<br/>,
             `Etiam nec lectus urna. Sed sodales ultrices dapibus. 
             Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
             nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 

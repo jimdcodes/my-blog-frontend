@@ -19,7 +19,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/articles" element={<ArticlesListPage />} />
           <Route path="/articles/:articleId" element={<ArticlePage />} />
-          <Route path="/images/test/asd" element={<ImageGallery />} />
+          <Route path="/typo/test/asd" element={<ImageGallery />} />
         </Routes>
       </div>
       </div>
