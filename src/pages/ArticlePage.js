@@ -11,7 +11,6 @@ const ArticlePage = () => {
     return (
         // Using react Fragment, <></>, since you cannot return more than one top level component
         <>
-        <h1>This is the article page for the article with id: {articleId}!</h1>
         <h1>{article.title}</h1>
         <p>{article.content}</p>
         {/* {article.content.map(paragraph => (
