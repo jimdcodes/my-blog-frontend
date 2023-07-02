@@ -68,8 +68,13 @@ nav a:hover {
 
 .image-link {
   text-decoration: none;
+  cursor: text;
   color: black;
-  /* padding: -16px -32px */
+  /* pointer-events: none; */
+}
+
+.image-link:hover {
+  cursor: text;
 }
 
 .article-list-item p {
