@@ -11,8 +11,8 @@ const ArticlePage = () => {
     return (
         // Using react Fragment, <></>, since you cannot return more than one top level component
         <>
-        <h1>{article.title}</h1>
-        <p>{article.content}</p>
+        <h1 key={article.title}>{article.title}</h1>
+        <p key={article.content}>{article.content}</p>
         {/* {article.content.map(paragraph => (
             <p>{paragraph}</p>
         ))} */}
