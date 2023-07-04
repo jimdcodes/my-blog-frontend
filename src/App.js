@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage';
 import ArticlesListPage from './pages/ArticlesListPage';
 import ArticlePage from './pages/ArticlePage';
 import ImagePage from './pages/ImagePage';
+import NotFoundPage from './pages/NotFoundPage';
 import ImageGallery from './imagehelper';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/articles" element={<ArticlesListPage />} />
           <Route path="/articles/:articleId" element={<ArticlePage />} />
           <Route path="/images" element={<ImagePage />} />
+          <Route path="*" element={<NotFoundPage />} />
           <Route path="/typo/test/asd" element={<ImageGallery />} />
         </Routes>
       </div>
