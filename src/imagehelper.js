@@ -5,7 +5,7 @@ function ImageGallery() {
   return (
     <div>
       {imageList.map((image, index) => (
-        <img key={index} src={image} alt={`image-${index}`} />
+        <img key={index} src={image} alt={`${index}`} />
       ))}
     </div>
   );
