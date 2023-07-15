@@ -23,6 +23,12 @@ const ArticlePage = () => {
     // const { articleId } = params;
     const article = articles.find(article => article.name === articleId);
 
+    const addUpvote = async () => {
+        const response = await axios.put(`/api/articles/${articleId}/upvote`);
+        const updatedArticle = response.data;
+        setArticleInfo(updatedArticle);
+    }
+
     if (!article) {
         return <NotFoundPage />
     }
@@ -31,6 +37,7 @@ const ArticlePage = () => {
         // Using react Fragment, <></>, since you cannot return more than one top level component
         <>
         <h1 key={article.title}>{article.title}</h1>
+        <div className="upvotes-section"><button onClick={addUpvote}>Upvote</button></div>        
         <p key={article.title + ": " + article.articleInfo}>This article has {articleInfo.upvotes} upvote(s)</p>
         <p key={article.content + article.title}>{article.content}</p>
         {/* {article.content.map(paragraph => (
