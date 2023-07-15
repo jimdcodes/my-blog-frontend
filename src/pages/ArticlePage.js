@@ -9,11 +9,12 @@ const ArticlePage = () => {
     const { articleId } = useParams();
 
     useEffect(() => {
-        const loadArticleInfo = async() => {
+        const loadArticleInfo = async () => {
             const response = await axios.get(`/api/articles/${articleId}`);
             const newArticleInfo = response.data;
             setArticleInfo(newArticleInfo);
         }
+        loadArticleInfo();
     }, []);
 
     // const params = useParams();
