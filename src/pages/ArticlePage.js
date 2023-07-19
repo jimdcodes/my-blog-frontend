@@ -43,9 +43,10 @@ const ArticlePage = () => {
         <h1 key={article.title}>{article.title}</h1>
         <div className="upvotes-section">
             {user
-                ? <button onClick={addUpvote}>Upvote</button>
+                ? <div>
+                    <button onClick={addUpvote}>Upvote</button>
+                    <p key={article.title + ": " + article.articleInfo}>This article has {articleInfo.upvotes} upvote(s)</p></div>
                 : <button>Log in to upvote</button>}
-            <p key={article.title + ": " + article.articleInfo}>This article has {articleInfo.upvotes} upvote(s)</p>
         </div>
         <p key={article.content + article.title}>{article.content}</p>
         {/* {article.content.map(paragraph => (
