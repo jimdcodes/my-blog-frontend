@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
 const LoginPage = () => {
@@ -7,8 +7,15 @@ const LoginPage = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
-    const logIn = () => {
-        
+    const navigate = useNavigate();
+
+    const logIn = async () => {
+        try {
+            await signInWithEmailAndPassword(getAuth(), email, password);
+            navigate('/articles');
+        } catch (e) {
+            setError(e.message);
+        }
     }
 
     return (
@@ -24,7 +31,7 @@ const LoginPage = () => {
             placeholder="Your password"
             value={password}
             onChange={e => setPassword(e.target.value)} />
-        <button>Log In</button>
+        <button onClick={logIn}>Log In</button>
         <Link to="/create-account">Don't have an account? Create one here</Link>
         </>        
     );
