@@ -8,6 +8,8 @@ import ArticlePage from './pages/ArticlePage';
 import ImagePage from './pages/ImagePage';
 import NotFoundPage from './pages/NotFoundPage';
 import ImageGallery from './imagehelper';
+import LoginPage from './pages/LoginPage';
+import CreateAccountPage from './pages/CreateAccountPage';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/articles" element={<ArticlesListPage />} />
           <Route path="/articles/:articleId" element={<ArticlePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/create-account" element={<CreateAccountPage />} />
           <Route path="/images" element={<ImagePage />} />
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/typo/test/asd" element={<ImageGallery />} />
