@@ -8,7 +8,8 @@ import useUser from '../hooks/useUser';
 import NotFoundPage from './NotFoundPage';
 
 const ArticlePage = () => {
-    const [articleInfo, setArticleInfo] = useState({ upvotes: 0, comments: [] });
+    const [articleInfo, setArticleInfo] = useState({ upvotes: 0, comments: [], canUpvote: false });
+    const { canUpvote } = articleInfo;
     const { articleId } = useParams();
 
     const { user, isLoading } = useUser();
@@ -21,8 +22,11 @@ const ArticlePage = () => {
             const newArticleInfo = response.data;
             setArticleInfo(newArticleInfo);
         }
-        loadArticleInfo();
-    }, []);
+
+        if (isLoading) {
+            loadArticleInfo();
+        }
+    }, [isLoading, user]);
 
     // const params = useParams();
     // const articleId = params.articleId;
@@ -48,7 +52,7 @@ const ArticlePage = () => {
         <div className="upvotes-section">
             {user
                 ? <div>
-                    <button onClick={addUpvote}>Upvote</button>
+                    <button onClick={addUpvote}>{canUpvote? 'Upvote' : 'Already Upvoted'}</button>
                     <p key={article.title + ": " + article.articleInfo}>This article has {articleInfo.upvotes} upvote(s)</p></div>
                 : <button>Log in to upvote</button>}
         </div>
