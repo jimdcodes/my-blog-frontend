@@ -15,7 +15,10 @@ const ArticlePage = () => {
 
     useEffect(() => {
         const loadArticleInfo = async () => {
-            const response = await axios.get(`/api/articles/${articleId}`);
+            const token = user && await user.getIdToken();
+            const response = await axios.get(`/api/articles/${articleId}`, {
+                headers: { authtoken: token },
+            });
             const newArticleInfo = response.data;
             setArticleInfo(newArticleInfo);
         }
