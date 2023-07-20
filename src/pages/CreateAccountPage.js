@@ -1,3 +1,4 @@
+import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -8,6 +9,20 @@ const CreateAccountPage = () => {
     const [error, setError] = useState('');
 
     const navigate = useNavigate();
+
+    const createAccount = async () => {
+        try {
+            if (password !== confirmPassword) {
+                setError('Password and confirm password do not match');
+                return;
+            }
+
+            await createUserWithEmailAndPassword(getAuth(), email, password);
+            navigate('/articles');
+        } catch (e) {
+            setError(e.message);
+        }
+    }
 
     return (
         <>
