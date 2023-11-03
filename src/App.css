@@ -34,7 +34,8 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white;
+  background: rgb(59, 108, 172);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBSyE0SX98Fipqysy8rb-E-NlvafSdqbMMQ&usqp=CAU");
 }
 
 nav ul {
@@ -57,7 +58,10 @@ nav a {
 }
 
 nav a:hover {
-  background: black;
+  /* background: black; */
+  background-image: url("C:/Users/Jimmy/Desktop/Covid Tracker IMG/test.JPG");
+  background-size: cover;
+  border-radius: 15%;
   color: white;
 }
 
