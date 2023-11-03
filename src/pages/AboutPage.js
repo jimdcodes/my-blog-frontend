@@ -3,28 +3,20 @@ const AboutPage = () => {
         <>
     <h1>About Me</h1>
     <p>
-        Welcome to my blog! Proin congue
-        ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. 
-        Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, 
-        non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut 
-        eleifend ut ipsum non fringilla. Praesent imperdiet nulla nec est luctus, at 
-        sodales purus euismod.
+        Welcome to my page! I'm Jimmy Dinh, a dedicated professional with a passion for leveraging technology to drive impactful results. With a Bachelor of Science degree in Physics from California State University of Los Angeles, I have cultivated a diverse skill set in various technical and analytical tools, including SQL, Power BI, Python, and Mathematica. My expertise extends to Agile methodologies, Scrum, and a range of programming languages, such as JavaScript, React, HTML, and 
+        CSS.
     </p>
     <p>
-        Donec vel mauris lectus. Etiam nec lectus urna. Sed sodales ultrices dapibus. 
-        Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
-        nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 
-        sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor 
-        interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
-        consequat quam. Vivamus accumsan dui in facilisis aliquet.,
+        My previous experiences in roles such as an IT Data Support Specialist and a Laboratory Administrator have equipped me with strong organizational and communication skills, alongside a commitment to maintaining confidentiality and creating an environment conducive to learning and growth. I have also had the privilege of serving as an Instructional Student Tutor and a Supplemental Instructor, allowing me to contribute to academic improvements in STEM subjects through personalized instruction and innovative teaching 
+        strategies.
     </p>
     <p>
-        Etiam nec lectus urna. Sed sodales ultrices dapibus. 
-        Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
-        nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 
-        sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor 
-        interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
-        consequat quam. Vivamus accumsan dui in facilisis aliquet.,
+        Driven by a proactive and adaptable approach, I constantly seek to expand my horizons. My passion for technology is reflected in my projects, including the development of a blog website and an Android app that tracks live COVID-19 information. Additionally, my completion of various HTML and CSS projects underscores my commitment to continuous learning and 
+        development.
+    </p>
+    <p>
+    I am enthusiastic about utilizing my skills and experience to contribute to meaningful projects and initiatives. Feel free to explore my work and reach out for collaboration or any 
+    inquiries.
     </p>
     </>
     );
