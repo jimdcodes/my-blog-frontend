@@ -56,9 +56,9 @@ const ArticlePage = () => {
                     <p key={article.title + ": " + article.articleInfo}>This article has {articleInfo.upvotes} upvote(s)</p></div>
                 : <button>Log in to upvote</button>}
         </div>
-        <p key={article.content + article.title}>{article.content}</p>
+        <p key={article.content + article.title}><b>Introduction: </b>{article.content}</p>
         {/* {article.content.map(paragraph => (
-            <p>{paragraph}</p>
+            <p key={article.content + article.title}>{paragraph}</p>
         ))} */}
         {user 
         ? <AddCommentForm
