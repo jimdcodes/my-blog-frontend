@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import InfoBox from '../covidTracker/InfoBox';
 import Map from '../covidTracker/Map';
 import Table from '../covidTracker/Table';
-import '../covidTracker/App2.css';
+import '../covidTracker/CovidTrackerPage.css';
 import '../covidTracker/Table.css';
 import { sortData } from '../covidTracker/util';
 import LineGraph from '../covidTracker/LineGraph';
@@ -13,7 +13,7 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function CovidTrackerPage() {
+const CovidTrackerPage = () => {
   const [countries, setCountries] = useState([]);
   const [country, setCountry] = useState(['worldwide']);
   const [countryInfo, setCountryInfo] = useState({});
@@ -68,7 +68,7 @@ function CovidTrackerPage() {
   };
 
   return (
-    <div className="app">
+    <div className="app2">
       <div className="app__left">
         <div className="app__header">
           <h1>COVID-19 TRACKER</h1>
