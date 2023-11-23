@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  /* To stop the content from touching top */
+  padding: 20px;
+}
+
+.app__dropdown {
+  background-color: white;
+}
+
+/* Target the h1 in app_header */
+.app_header > h1 {
+  font-size: 2rem;
+}
+
+.app__header {
+  /*Forces this class into one row*/
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  /*Pushes space between evenly*/
+  justify-content: space-between;
+}
+
+.app__left {
+  /* LEft box takes 90% of entire box no matter what */
+  flex: 0.9;
+}
+
+/* .app__right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__right .MuiCardContent-root {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__graph {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+} */
+
+.linegraph__space {
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.app__stats {
+  /*Forces this class into one row*/
+  display: flex;
+  /*Pushes space between evenly*/
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .app {
+    flex-direction: column;
+  }
+}

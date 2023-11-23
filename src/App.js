@@ -10,6 +10,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import ImageGallery from './imagehelper';
 import LoginPage from './pages/LoginPage';
 import CreateAccountPage from './pages/CreateAccountPage';
+import CovidTrackerPage from './pages/CovidTrackerPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/create-account" element={<CreateAccountPage />} />
           <Route path="/images" element={<ImagePage />} />
+          <Route path="/CT" element={<CovidTrackerPage />} />
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/typo/test/asd" element={<ImageGallery />} />
         </Routes>
